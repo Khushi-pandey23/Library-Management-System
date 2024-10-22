@@ -23,19 +23,19 @@ Welcome to the **Library Management System**! This web application helps manage 
 
 ## 📁 Project Structure
 
-Library Management System/
-│
-├── app.py                  # Main application file
-├── forms.py                # Form definitions
-├── books.py                # Book data
-├── templates/              # HTML templates
-│   ├── base.html           # Base layout
-│   ├── home.html           # Home page
-│   ├── student.html        # Student dashboard
-│   ├── admin.html          # Admin dashboard
-│   └── search_results.html  # Search results page
-└── static/                 # Static files (CSS, JS, images)
-    └── style.css           # Custom styles
+Library Management System/<br>
+│<br>
+├── app.py                  # Main application file<br>
+├── forms.py                # Form definitions<br>
+├── books.py                # Book data<br>
+├── templates/              # HTML templates<br>
+│   ├── base.html           # Base layout<br>
+│   ├── home.html           # Home page<br>
+│   ├── student.html        # Student dashboard<br>
+│   ├── admin.html          # Admin dashboard<br>
+│   └── search_results.html  # Search results page<br>
+└── static/                 # Static files (CSS, JS, images)<br>
+    └── style.css           # Custom styles<br>
 
 ## 📦 Installation
 
