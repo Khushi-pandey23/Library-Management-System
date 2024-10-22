@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Home - Library System{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Select Your Role</h2>
+                </div>
+                <div class="card-body text-center">
+                    <a href="/student" class="btn btn-primary btn-lg btn-block">Student</a>
+                    <a href="/admin" class="btn btn-secondary btn-lg btn-block mt-3">Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

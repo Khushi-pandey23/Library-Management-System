@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Request Status - Library System{% endblock %}
+
+{% block content %}
+<h2 class="text-center mt-3">Requested Books</h2>
+
+<form method="POST" action="{{ url_for('request_status') }}">
+    {{ request_form.hidden_tag() }}
+    <div class="form-group">
+        {{ request_form.book_id.label(class="form-label") }}
+        {{ request_form.book_id(class="form-control", placeholder="Enter Book ID") }}
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Request Book</button>
+</form>
+
+<div class="container mt-5">
+    <h3>Current Requests:</h3>
+    {% if requested_books %}
+        <ul class="list-group">
+            {% for book in requested_books %}
+                <li class="list-group-item">
+                    {{ book['id'] }} <strong>{{ book['Name'] }}</strong> by {{ book['Author'] }}
+                    <span class="badge badge-info float-right">{{ book['Status'] }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="text-center">No requested books found.</p>
+    {% endif %}
+    <a href="{{ url_for('student') }}" class="btn btn-secondary mt-3">Back to Dashboard</a>
+</div>
+{% endblock %}
