@@ -24,7 +24,7 @@ Welcome to the **Library Management System**! This web application helps manage 
 ## 📁 Project Structure
 
 ```bash
-Library Management System/<br>
+Library Management System/
 │
 ├── app.py                  # Main application file
 ├── forms.py                # Form definitions
